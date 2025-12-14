@@ -25,4 +25,4 @@ COPY app.py .
 ENV PORT=10000
 
 # Запуск
-CMD ["gunicorn", "--bind", "0.0.0.0:${PORT}", "--workers", "1", "--timeout", "120", "app:app"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT} --workers 1 --timeout 120 app:app"]
