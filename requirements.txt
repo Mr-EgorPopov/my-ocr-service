@@ -1,12 +1,12 @@
-# Фиксируем совместимую версию numpy (обязательно <2.0)
+# Совместимая версия numpy (обязательно <2.0)
 numpy==1.26.4
 
-# Указываем версии OpenCV, совместимые с numpy 1.x
-opencv-python==4.10.0.84
-opencv-contrib-python==4.10.0.84
-opencv-python-headless==4.10.0.84
+# OpenCV — ТОЛЬКО версии, разрешённые PaddleOCR (<=4.6.0.66)
+opencv-python==4.6.0.66
+opencv-contrib-python==4.6.0.66
+opencv-python-headless==4.6.0.66
 
-# Остальные зависимости
+# Основные зависимости
 paddlepaddle==2.6.2
 paddleocr==2.7.0.3
 flask
